@@ -3,7 +3,7 @@
 CamLink downloads `announcements.json` from
 `https://raw.githubusercontent.com/NTQD/camlink-announcements/main/announcements.json`
 (`BuildConfig.ANNOUNCEMENTS_FEED_URL`) about every 12 hours while the phone has internet,
-and adds each new entry to the Notification Center (doc/BUGLOG.md UI-170).
+and at each app start, and adds each new entry to the Notification Center (doc/BUGLOG.md UI-170).
 
 The feed lives in its own **public** repository because `NTQD/CamLink2` is private: a private
 file would need a GitHub token inside the app, and anyone could extract it from the APK.
@@ -14,7 +14,7 @@ file would need a GitHub token inside the app, and anyone could extract it from 
 2. Add an entry with a new `id`. Ids are never reused: a phone that has seen an id once never
    adds it again, even after the user deletes the notice.
 3. Commit to `main`. GitHub's raw file cache may delay it by about 5 minutes; phones pick it up
-   at their next check (up to 12 hours).
+   at their next check (next app start, or within 12 hours).
 
 Remove old entries whenever you like; phones keep the notices they already have.
 
@@ -36,10 +36,11 @@ Remove old entries whenever you like; phones keep the notices they already have.
 
 ## Testing on a phone
 
-The check runs at app start (first install) and then every 12 hours. To run it now:
+Close the app completely and open it again: the start check runs as soon as the phone is online.
 
 ```bash
-adb shell cmd jobscheduler run -f com.example.camlink <job id>
+adb shell am force-stop com.example.camlink
 ```
 
-The job id is listed by `adb shell dumpsys jobscheduler | grep com.example.camlink`.
+Forcing the periodic job (`cmd jobscheduler run -f`) does not work: WorkManager skips periodic
+work that is run before its period is up.
