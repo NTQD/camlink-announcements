@@ -26,6 +26,20 @@
         "en": "Remote notifications work.",
         "vi": "Thông báo từ xa đã hoạt động."
       }
+    },
+    {
+      "id": "2026-10-home-menu",
+      "date": "2026-10-20",
+      "expires": "2026-12-31",
+      "minVersionCode": 1,
+      "title": {
+        "en": "New: quick-access menu on Home",
+        "vi": "Mới: menu truy cập nhanh trên Trang chủ"
+      },
+      "body": {
+        "en": "Tap the menu icon on Home for camera, transfer and app shortcuts: device information, auto-download, appearance, language and your notifications.",
+        "vi": "Chạm vào biểu tượng menu trên Trang chủ để mở nhanh các mục máy ảnh, truyền tệp và ứng dụng: thông tin thiết bị, tự động tải, giao diện, ngôn ngữ và thông báo."
+      }
     }
   ]
 }
