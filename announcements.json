@@ -16,4 +16,10 @@
       }
     }
   ]
+},
+{
+  "id": "2026-10-test-1",
+  "date": "2026-10-20",
+  "title": { "en": "Test notice", "vi": "Thông báo thử" },
+  "body":  { "en": "Remote notifications work.", "vi": "Thông báo từ xa đã hoạt động." }
 }
