@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "announcements": [
+    {
+      "id": "2026-10-notification-center",
+      "date": "2026-10-20",
+      "expires": "2026-12-31",
+      "minVersionCode": 1,
+      "title": {
+        "en": "New: Notification Center",
+        "vi": "Mới: Trung tâm thông báo"
+      },
+      "body": {
+        "en": "CamLink now tells you when downloads finish, when the camera battery or memory card runs low, and when there is news about the app.",
+        "vi": "CamLink giờ báo cho bạn khi tải ảnh xong, khi pin máy ảnh hoặc thẻ nhớ sắp hết, và khi có tin tức về ứng dụng."
+      }
+    }
+  ]
+}
