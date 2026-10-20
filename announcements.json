@@ -40,6 +40,20 @@
         "en": "Tap the menu icon on Home for camera, transfer and app shortcuts: device information, auto-download, appearance, language and your notifications.",
         "vi": "Chạm vào biểu tượng menu trên Trang chủ để mở nhanh các mục máy ảnh, truyền tệp và ứng dụng: thông tin thiết bị, tự động tải, giao diện, ngôn ngữ và thông báo."
       }
+    },
+    {
+      "id": "2026-10-notification-patch",
+      "date": "2026-10-20",
+      "expires": "2026-12-31",
+      "minVersionCode": 1,
+      "title": {
+        "en": "Update: smoother menu and easier notification cleanup",
+        "vi": "Cập nhật: menu mượt hơn và dọn thông báo dễ hơn"
+      },
+      "body": {
+        "en": "Opening a screen from the Home menu no longer flashes back to Home first. The add-camera button now shows a camera with a plus sign. In Notifications, long announcements show two lines until you tap them to read the rest. Press and hold a notification to select several, use Select all, then delete them together, just like in your mail app.",
+        "vi": "Mở một màn hình từ menu Trang chủ không còn bị nháy về Trang chủ trước. Nút thêm máy ảnh nay có biểu tượng máy ảnh kèm dấu cộng. Trong Thông báo, thông báo dài chỉ hiện hai dòng cho đến khi bạn chạm để đọc tiếp. Nhấn giữ một thông báo để chọn nhiều mục, dùng Chọn tất cả rồi xóa cùng lúc, giống như trong ứng dụng thư."
+      }
     }
   ]
 }
